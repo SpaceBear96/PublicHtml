@@ -14,10 +14,10 @@ $rs = mysqli_query($conx,$query);
 <body>
     <div class="container">
     <input type="button" id="btnNuevo" value="Nuevo">
-    <div id="frmDatos">
+    <div id="frmDatos" style="display:none">
         Nombres: <input id="txtNombre"/></br>
         Telefono: <input id="txtTelefono"/></br>
-        Direccion: <input id="direccion"/></br>
+        Direccion: <input id="txtDireccion"/></br>
         <input type="button" id="btnGuardar" value="Guardar">
     </div>
     <table border=1 class="table">

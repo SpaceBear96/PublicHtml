@@ -1,5 +1,12 @@
 $(document).ready(function(){
     $("#btnNuevo").click(function(){
-        alert("Lo que desees");
+        $("#frmDatos").fadeToggle();    
+    });
+    $("#btnGuardar").click(function(){
+        valnom = $("#txtNombres").val();
+        valtel = $("#txtTelefono").val();
+        valdir = $("#txtDireccion").val();
+
+
     })
 })
