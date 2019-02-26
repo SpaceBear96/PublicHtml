@@ -32,7 +32,7 @@ $rs = mysqli_query($conx,$query);
             <td><?php echo $fila["nombres"] ?></td>
             <td><?php echo $fila["telefono"] ?></td>
             <td><?php echo $fila["direccion"] ?></td>
-            <td><input type="button" value="Editar"></td>
+            <td><input type="button" class="btnEditar" data-id="<?php echo $fila["id"] ?>" value="Editar"></td>
         </tr>
         <?php } ?>
     </table>
