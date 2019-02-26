@@ -3,10 +3,16 @@ $(document).ready(function(){
         $("#frmDatos").fadeToggle();    
     });
     $("#btnGuardar").click(function(){
-        valnom = $("#txtNombres").val();
+        valnom = $("#txtNombre").val();
         valtel = $("#txtTelefono").val();
         valdir = $("#txtDireccion").val();
-
-
+        datos={
+            "nombre": valnom,
+            "telefono": valtel,
+            "direccion": valdir
+        }
+        $.post("guardar.php",datos,function(rpta){
+            alert(rpta);
+        });
     })
 })
