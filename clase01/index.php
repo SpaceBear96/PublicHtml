@@ -7,16 +7,20 @@ $rs = mysqli_query($conx,$query);
 <html lang="en">
 <head>
     <title>Ejemplo con Ajax</title>
-    <link rel="stylesheet" href="bootstrap.css.map">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/util.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+    <div class="container">
+    <input type="button" id="btnNuevo" value="Nuevo">
     <div id="frmDatos">
         Nombres: <input id="txtNombre"/></br>
         Telefono: <input id="txtTelefono"/></br>
         Direccion: <input id="direccion"/></br>
         <input type="button" id="btnGuardar" value="Guardar">
     </div>
-    <table border=1>
+    <table border=1 class="table">
         <tr>
             <th> Nombres </th>
             <th> Telefono </th>
@@ -32,5 +36,6 @@ $rs = mysqli_query($conx,$query);
         </tr>
         <?php } ?>
     </table>
+    </div>
 </body>
 </html>
